@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1em;
+  background-color: #eee;
+  box-sizing: border-box;
+}
+
+/* ----HEADER SECTION---- */
+.header {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-areas: "heading heading" "navigate navigate" "left left" "right right";
+}
+
+.header__heading {
+  grid-area: heading;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #052364;
+  color: #fff;
+  padding: 10px 5px;
+}
+
+.nav {
+  grid-area: navigate;
+  position: fixed;
+  z-index: 999;
+  margin: 48px 0 0 0;
+  padding: 10px 5px;
+  height: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #052364;
+  font-size: 0.8rem;
+}
+.nav .nav__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.nav .nav__list .nav__listitem {
+  list-style-type: none;
+  margin: 0 5px;
+  color: #fff;
+}
+
+.header__left {
+  grid-area: left;
+  align-self: center;
+  justify-self: center;
+  background: #fff;
+  width: 90%;
+  margin: 84px 0 0 0;
+  border-radius: 5px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-rows: 1fr auto auto auto auto 1fr;
+  grid-template-areas: "blank1" "profilepic" "social" "contacts" "skills" "blank2";
+}
+.header__left li {
+  list-style-type: none;
+  margin: 0 5px;
+}
+
+.header__profile {
+  clip-path: circle(50%);
+  grid-area: profilepic;
+  justify-self: center;
+  align-self: center;
+}
+
+.header__skills {
+  grid-area: skills;
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+}
+.header__skills li {
+  background: #052364;
+  color: #fff;
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin: 5px;
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+.header__social {
+  grid-area: social;
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  color: #052364;
+}
+
+.header__contacts {
+  grid-area: contacts;
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header__contacts i {
+  color: #052364;
+  margin: 10px;
+}
+.header__contacts span {
+  color: #052364;
+}
+
+.header__right {
+  grid-area: right;
+  justify-self: center;
+  align-self: center;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 20px;
+  width: 90%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */
